@@ -18,13 +18,13 @@ export const GET = async (req, { params }) => {
     if (!character) {
       return new NextResponse("not found", { status: 404 });
     }
-    const characterQuotes = quotes.data.filter(
-      (item) => item.character_id === character.id
+    const character_quotes = quotes.data.filter(
+      (quote) => quote.character_id === character.id
     );
 
     return NextResponse.json({
       character,
-      character_quotes: characterQuotes.length > 0 ? characterQuotes : null,
+      character_quotes: character_quotes.length > 0 ? character_quotes : null,
     });
   } catch (error) {
     return new NextResponse("Internal server error", { status: 500 });

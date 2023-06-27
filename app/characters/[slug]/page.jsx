@@ -9,6 +9,7 @@ Renders a Next.js page component that displays detailed information about a char
 
 import { getAllCharacters, getCharacterBySlug } from "@/lib/characters";
 import { Container } from "@/components";
+import Image from "next/image";
 
 export const dynamicParams = false;
 
@@ -17,10 +18,54 @@ export const generateStaticParams = async () => {
   return characters.map((character) => ({ slug: character.slug }));
 };
 
-const Page = async () => {
+const Page = async ({ params }) => {
+  const { character, character_quotes } = await getCharacterBySlug(params.slug);
+  const res = await getCharacterBySlug(params.slug);
+  console.log(res);
   return (
     <Container className="flex flex-col gap-5 py-5" as="main">
-      Some info about Character.
+      <div>
+        <h1>{character.name}</h1>
+        <ul>
+          {character.occupations.map((occupation) => {
+            return <li key={occupation}>{occupation}</li>;
+          })}
+        </ul>
+      </div>
+
+      <p>{character.description}</p>
+
+      <ul>
+        {character.images.map((image) => {
+          return (
+            <li key={image}>
+              <Image src={image} width={760} height={435} />
+            </li>
+          );
+        })}
+      </ul>
+
+      {character.skills && (
+        <>
+          <h2>Power And Skills</h2>
+          <ul>
+            {character.skills.map((skill) => {
+              return <li key={skill}>{skill}</li>;
+            })}
+          </ul>
+        </>
+      )}
+
+      {character_quotes && (
+        <>
+          <h2>Famous Quotes</h2>
+          <ul>
+            {character_quotes.map((item) => {
+              return <li key={item.quote}>{item.quote}</li>;
+            })}
+          </ul>
+        </>
+      )}
     </Container>
   );
 };
