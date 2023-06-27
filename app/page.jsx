@@ -7,16 +7,8 @@ Renders a Next.js page component that displays a grid of character avatars with 
 
 import Link from "next/link";
 import Image from "next/image";
-import { endpoint } from "@/utils/endpoint";
 import { Container } from "@/components";
-
-const getAllCharacters = async () => {
-  const data = await fetch(`${endpoint}/characters`);
-  if (!data.ok) {
-    throw new Error("Failed to fetch data");
-  }
-  return data.json();
-};
+import { getAllCharacters } from "@/lib/characters";
 
 const Page = async () => {
   const data = await getAllCharacters();
