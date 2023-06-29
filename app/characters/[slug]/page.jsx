@@ -12,6 +12,7 @@ import { Container } from "@/components";
 import Image from "next/image";
 
 export const dynamicParams = false;
+export const dynamic = "force-dynamic";
 
 export const generateStaticParams = async () => {
   const { characters } = await getAllCharacters();
