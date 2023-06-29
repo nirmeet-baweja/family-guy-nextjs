@@ -10,6 +10,8 @@ import Image from "next/image";
 import { Container } from "@/components";
 import { getAllCharacters } from "@/lib/characters";
 
+export const dynamic = "force-dynamic";
+
 const Page = async () => {
   const data = await getAllCharacters();
 
