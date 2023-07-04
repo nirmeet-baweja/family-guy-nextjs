@@ -10,6 +10,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { TbArrowBigRightFilled } from "react-icons/tb";
 
+export const dynamic = "force-dynamic";
+
 const Page = async () => {
   const { randomQuestion } = await getRandomQuizQuestion();
 
