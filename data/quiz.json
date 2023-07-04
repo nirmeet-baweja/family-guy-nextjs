@@ -3,13 +3,13 @@
     {
       "id": "GKfrCbCN5f",
       "title": "What is the name of the Griffin family dog?",
-      "answers": ["Brian", "Stewie", "Meg", "Chris"],
+      "options": ["Brian", "Stewie", "Meg", "Chris"],
       "correct_answer": "Brian"
     },
     {
       "id": "cQC0Y2Dmhu",
       "title": "What is the name of Lois Griffin's father?",
-      "answers": [
+      "options": [
         "Carter Pewterschmidt",
         "Peter Griffin",
         "Glenn Quagmire",
@@ -20,13 +20,13 @@
     {
       "id": "DFfAzImRk6",
       "title": "What is the name of the town where the Griffin family lives?",
-      "answers": ["Quahog", "Springfield", "Simpsons", "Griffinville"],
+      "options": ["Quahog", "Springfield", "Simpsons", "Griffinville"],
       "correct_answer": "Quahog"
     },
     {
       "id": "RY9qUoigEA",
       "title": "What is the name of the bar where Peter, Joe, Quagmire, and Cleveland go to?",
-      "answers": [
+      "options": [
         "The Drunken Clam",
         "The Griffin Tavern",
         "The Quahog Pub",
@@ -37,13 +37,13 @@
     {
       "id": "qsLWiq531a",
       "title": "What is the name of Stewie Griffin's teddy bear?",
-      "answers": ["Rupert", "Winston", "Barney", "Wally"],
+      "options": ["Rupert", "Winston", "Barney", "Wally"],
       "correct_answer": "Rupert"
     },
     {
       "id": "WbxoPIWfyk",
       "title": "What is the name of the chicken who is Peter Griffin's nemesis?",
-      "answers": [
+      "options": [
         "Lois Griffin",
         "Meg Griffin",
         "Stewie Griffin",
@@ -54,7 +54,7 @@
     {
       "id": "MUfeMhv3n8",
       "title": "What is the name of the news anchor on Channel 5?",
-      "answers": [
+      "options": [
         "Tom Tucker",
         "Diane Simmons",
         "Peter Griffin",
@@ -65,7 +65,7 @@
     {
       "id": "c2Ocp9ZvN2",
       "title": "What is the name of the police officer who is Joe Swanson's partner?",
-      "answers": [
+      "options": [
         "Brian Griffin",
         "Stewie Griffin",
         "Glenn Quagmire",
@@ -76,7 +76,7 @@
     {
       "id": "ypcGVPrhsg",
       "title": "What is the name of the mall that the Griffin family frequently goes to?",
-      "answers": [
+      "options": [
         "The Quahog Mall",
         "The Springfield Mall",
         "The Simpsons Mall",
@@ -87,43 +87,43 @@
     {
       "id": "gC3jrDwEYk",
       "title": "Who does Stewie want to kill?",
-      "answers": ["Meg", "Chris", "Peter", "Lois"],
+      "options": ["Meg", "Chris", "Peter", "Lois"],
       "correct_answer": "Lois"
     },
     {
       "id": "csOEYs6zXn",
       "title": "Where was Peter born?",
-      "answers": ["Mexico", "Canada", "United States", "Russia"],
+      "options": ["Mexico", "Canada", "United States", "Russia"],
       "correct_answer": "Mexico"
     },
     {
       "id": "cyqZYE8DIK",
       "title": "Which Family Guy character is obsessed with world domination?",
-      "answers": ["Meg", "Chris", "Stewie", "Brian"],
+      "options": ["Meg", "Chris", "Stewie", "Brian"],
       "correct_answer": "Stewie"
     },
     {
       "id": "CfQnf3lH56",
       "title": "Who is the mayor of Quahog?",
-      "answers": ["Bill Bixby", "Adam West", "Lynda Carter", "Burt Ward"],
+      "options": ["Bill Bixby", "Adam West", "Lynda Carter", "Burt Ward"],
       "correct_answer": "Adam West"
     },
     {
       "id": "e3dDjEEWl0",
       "title": "Who founded the city of Quahog?",
-      "answers": ["Griffin Peterson", "Adam West", "Miles Musket", "A Frog"],
+      "options": ["Griffin Peterson", "Adam West", "Miles Musket", "A Frog"],
       "correct_answer": "Griffin Peterson"
     },
     {
       "id": "wKuUTrvMrF",
       "title": "What did Peter change Meg's name to on her birth certificate?",
-      "answers": ["Megillah", "Megatron", "Megolavina", "Mega Millions"],
+      "options": ["Megillah", "Megatron", "Megolavina", "Mega Millions"],
       "correct_answer": "Megatron"
     },
     {
       "id": "SlYDds3o7F",
       "title": "Who burned The Drunken Clam to the ground?",
-      "answers": ["Peter", "Brian", "God", "Stewie"],
+      "options": ["Peter", "Brian", "God", "Stewie"],
       "correct_answer": "Peter"
     }
   ]
