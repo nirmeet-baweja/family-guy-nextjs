@@ -5,19 +5,10 @@ Renders a Next.js page component that displays a quiz introduction with an image
 */
 
 import { Container } from "@/components";
+import { getRandomQuizQuestion } from "@/lib/quiz";
 import Image from "next/image";
 import Link from "next/link";
 import { TbArrowBigRightFilled } from "react-icons/tb";
-
-export const getRandomQuizQuestion = async () => {
-  const response = await fetch(path.join(endpoint, `quiz`, `random`), {
-    cache: "no-store",
-  });
-  if (!response.ok) {
-    throw new Error("Failed to fetch data.");
-  }
-  return response.json();
-};
 
 const Page = async () => {
   const { randomQuestion } = await getRandomQuizQuestion();
