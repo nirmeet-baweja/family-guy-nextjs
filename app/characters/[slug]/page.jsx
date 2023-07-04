@@ -7,17 +7,12 @@ Renders a Next.js page component that displays detailed information about a char
 @returns {JSX.Element} The rendered page component.
 */
 
-import { getAllCharacters, getCharacterBySlug } from "@/lib/characters";
+import { getCharacterBySlug } from "@/lib/characters";
 import { Container } from "@/components";
 import Image from "next/image";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 export const dynamic = "force-dynamic";
-
-export const generateStaticParams = async () => {
-  const { characters } = await getAllCharacters();
-  return characters.map((character) => ({ slug: character.slug }));
-};
 
 const Page = async ({ params }) => {
   const { character, character_quotes } = await getCharacterBySlug(params.slug);
